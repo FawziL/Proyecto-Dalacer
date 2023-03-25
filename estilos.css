@@ -1,0 +1,111 @@
+
+  /*SECCIONES DE PAGINA///////////////////////////////////////////// */
+  .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+    padding: 15px; }
+  
+  .form {
+    display: flex;
+    border-style: solid;
+    flex-direction: column;
+    padding: 15px;
+    background-image: linear-gradient(to right, #044369, #217b9e, #27ada9, #74cdf0);
+    text-align: center; }
+  
+  .formOpciones {
+    padding: 10px; }
+  
+  article {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-image: linear-gradient(to right, #044369, #217b9e, #27ada9, #74cdf0); }
+  
+  section {
+    text-align: center; 
+    display: flex;}
+  
+  .productos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+
+  .listado-favoritos{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .recomendaciones {
+    display: block;
+    border-style: solid;
+    border-radius: 10%;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    width: 300px; 
+    background-image: linear-gradient(to right, #044369, #217b9e, #27ada9, #74cdf0);}
+
+.imagen-producto{
+    width: 200px;
+    height: 150px;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+
+  #boton-carrito{
+    width: 50px;
+    height: 50px;
+    border-radius: 25%; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+#pagar{
+  background-color: rgb(0, 255, 85);
+  float: right;
+  padding: 5px;
+}
+
+#comprar{
+  background-color: rgb(0, 255, 85);
+  float: right;
+  padding: 5px;
+}
+
+#seccion-pago{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+
+#botones{
+  background-color: rgb(0, 255, 85);
+  float: right;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.btn-favorito{
+  height: 30px;
+  width: 150px; 
+  border-radius: 10px;
+  background-color: aliceblue;
+  border: none;
+}
+.btn-borrar{
+  height: 30px;
+  width: 50px; 
+  border-radius: 10px;
+  border: none;
+}

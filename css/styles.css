@@ -1,0 +1,422 @@
+body {
+  font-family: "Zen Maru Gothic", sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  color: black;
+}
+/* Header */
+nav {
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+}
+.logo {
+  width: 150px;
+  height: 80px;
+  border-radius: 80%;
+  margin-left: 50px;
+  margin-right: 40px;
+}
+.nax {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  border-style: solid;
+  border-radius: 18px;
+  font-size: 20px;
+  margin-right: 40px;
+  border-color: rgb(148, 153, 156);
+  text-decoration: none;
+  max-width: 135px;
+}
+.nax a {
+  text-decoration: none;
+  color: white;
+}
+.padding-left {
+  padding-left: 10px;
+}
+select {
+  border-radius: 5px;
+  padding: 3px;
+}
+.welcome {
+  background-image: url(../img/pexels-photo-998641.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Titulo {
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  color: white;
+}
+.carrusel {
+  height: 500px;
+  width: 100%;
+  padding: 0px 100px 0px 100px;
+  border-radius: 10%;
+  margin-bottom: 50px;
+}
+.products {
+  text-align: center;
+}
+.recomendaciones {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+section {
+  background-image: linear-gradient(
+    to left,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+}
+.product {
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  border-style: solid;
+  background-color: rgb(180, 177, 177);
+}
+.product img {
+  height: 180px;
+  width: 250px;
+  border-radius: 15px;
+}
+.product p {
+  margin: 6px;
+  font-size: 18px;
+}
+footer {
+  padding: 10px;
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+  text-align: center;
+  font-size: 18px;
+}
+footer p {
+  color: white;
+}
+footer img {
+  max-width: 120px;
+  min-height: 80px;
+  border-radius: 80%;
+  margin-left: 50px;
+}
+svg {
+  height: 30px;
+  width: 30px;
+  margin: 4px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.comunication {
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+.comunication h2,
+p {
+  color: white;
+}
+.comunication svg {
+  height: 100px;
+  width: 200px;
+}
+.formulario {
+  color: white;
+  padding: 50px;
+  border-style: solid;
+  border-radius: 15px;
+  margin-left: 50x;
+  font-size: 18px;
+}
+.formulario label {
+  color: white;
+}
+.formulario input,
+textarea {
+  border-radius: 15px;
+}
+.formOpciones {
+  padding-bottom: 10px;
+}
+.login {
+  padding: 10px;
+}
+.botonesUsuarios {
+  margin: 30px;
+  height: 60px;
+  width: 450px;
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+  border-style: solid;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+}
+
+#usuarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+}
+footer a {
+  text-decoration: none;
+}
+.sectionProduct {
+  width: 100%;
+  display: flex;
+}
+.sectionProductProduct {
+  width: 100%;
+}
+.productos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.recomendacion {
+  display: block;
+  border-style: solid;
+  border-radius: 10%;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  background-image: linear-gradient(
+    to right,
+    #044369,
+    #217b9e,
+    #27ada9,
+    #74cdf0
+  );
+}
+
+.imagen-producto {
+  width: 250px;
+  height: 180px;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.btn-favorito {
+  height: 30px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: aliceblue;
+  border: none;
+}
+.categorias {
+  font-size: 22px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+  width: 200px;
+  height: 100%;
+}
+.categorias a,
+h2 {
+  color: white;
+}
+.categorias a {
+  text-decoration: none;
+  padding-top: 15px;
+}
+.x {
+  padding: 7.5px;
+}
+.togleCategory {
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+}
+.titleProduct {
+  display: flex;
+  color: white;
+  background-image: linear-gradient(
+    to left,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+  align-items: center;
+  padding: 10px;
+}
+.titleP {
+  margin: 0 auto;
+}
+#boton-carrito {
+  width: 50px;
+  height: 40px;
+  border-radius: 25%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.listado-favoritos {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  flex-wrap: wrap;
+}
+#pagar, #comprar{
+  background-color: rgb(0, 255, 85);
+  float: right;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#seccion-pago {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+p{
+    color: black;
+}
+.flex {
+  display: flex;
+}
+.subTitulos {
+  font-size: 26px;
+  color: #350c81;
+  padding-top: 25px;
+  text-align: center;
+}
+.btn-borrar {
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+.btn-borrar img {
+  height: 30px;
+  width: 20px;
+  padding: 0px;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+.padding {
+  padding: 10px;
+  justify-content: center;
+}
+#botones {
+  border-radius: 5px;
+  background-color: rgb(0, 255, 85);
+  padding: 2px;
+  width: 150px;
+  float: right;
+  margin: 10px;
+}
+.imgModal {
+  height: 480px;
+  width: 500px;
+  padding: 15px;
+}
+
+
+
+.form-group {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.payment-methods {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.payment-methods li {
+  margin-bottom: 10px;
+}
+
+.payment-methods label {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.payment-methods input[type="radio"] {
+  display: none;
+}
+
+.payment-methods input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.payment-methods input[type="radio"]:checked + label:before {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.payment-methods input[type="radio"]:checked + label:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}

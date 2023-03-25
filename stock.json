@@ -1,0 +1,58 @@
+[
+    {   "id":1,
+        "nombre" : "Volkswagen Bora",
+        "precio" : 2500,
+        "descripcion" : "2008 | 100.000 km",
+        "img" : "../imgs/stock/1.jpg",
+        "cantidad":1},
+
+    {   "id":2,
+        "nombre" : "Honda Crv",
+        "precio" : 7700,
+        "descripcion" : "2006 | 165.000 km",
+        "img" : "../imgs/stock/2.jpg",
+        "cantidad":1},
+
+    {   "id":3,
+        "nombre" : "Honda Civic",
+        "precio" : 6800,
+        "descripcion" : "2007 | 145.000 km",
+        "img" : "../imgs/stock/3.jpg",
+        "cantidad":1},
+
+    {   "id":4,
+        "nombre" : "Honda Civic Emotion",
+        "precio" : 7600,
+        "descripcion" : "2008 | 67.000 km ",
+        "img" : "../imgs/stock/4.jpg",
+        "cantidad":1},
+
+    {   "id":5,
+        "nombre" : "Chevrolet Aveo Lt",
+        "precio" : 6000,
+        "descripcion" : "2011 | 101.566 km",
+        "img" : "../imgs/stock/5.jpg",
+        "cantidad":1},
+
+    {   "id":6,
+        "nombre" : "Chevrolet Aveo Lt",
+        "precio" : 4200,
+        "descripcion" : "2011 | 286.000 km",
+        "img" : "../imgs/stock/6.jpg",
+        "cantidad":1},
+
+    {   "id":7,
+        "nombre" : "Ford Mustang Gt500",
+        "precio" : 13000,
+        "descripcion" : "2008 | 49.000 km",
+        "img" : "../imgs/stock/7.jpg",
+        "cantidad":1},
+
+    {   "id":8,
+        "nombre" : "Ford Fiesta Titanium",
+        "precio" : 9000,
+        "descripcion" : "2014 | 36.000 km",
+        "img" : "../imgs/stock/8.jpg",
+        "cantidad":1}
+    
+    ]
