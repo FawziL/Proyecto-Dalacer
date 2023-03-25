@@ -162,7 +162,6 @@ comprar.addEventListener('click',()=>{
 
 
 
-
     function funcionar(){
         const pagar = document.getElementById('pagar');
         pagar.textContent = "Pagar";
