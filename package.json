@@ -1,17 +1,22 @@
 {
-  "name": "saas",
+  "name": "proyecto-dalacer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hola, este es un proyecto de HTML, CSS y JS que creé para mis respectivos cursos, ahora reacondicionado por la diferencia de conocimientos a ese época.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FawziL/Proyecto-Dalacer.git"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^6.0.1",
-    "nodemon": "^2.0.15"
+  "bugs": {
+    "url": "https://github.com/FawziL/Proyecto-Dalacer/issues"
+  },
+  "homepage": "https://github.com/FawziL/Proyecto-Dalacer#readme",
+  "dependencies": {
+    "node-sass": "^9.0.0"
   }
 }
