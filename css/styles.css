@@ -6,7 +6,9 @@ body {
   padding: 0px;
   color: black;
 }
-/* Header */
+
+/*////////////////////////////  Header //////////////////////////// */
+
 nav {
   background-image: linear-gradient(
     to right,
@@ -18,27 +20,25 @@ nav {
   );
 }
 .logo {
-  width: 150px;
-  height: 80px;
+  width: 120px;
+  height: 70px;
   border-radius: 80%;
   margin-left: 50px;
+  margin-right: 50px;
+}
+.navbar-nav a{
   margin-right: 40px;
 }
 .nax {
   background-color: transparent;
   color: white;
-  padding: 10px;
-  border-style: solid;
+  padding: 5px;
   border-radius: 18px;
   font-size: 20px;
-  margin-right: 40px;
+
   border-color: rgb(148, 153, 156);
   text-decoration: none;
   max-width: 135px;
-}
-.nax a {
-  text-decoration: none;
-  color: white;
 }
 .padding-left {
   padding-left: 10px;
@@ -47,33 +47,55 @@ select {
   border-radius: 5px;
   padding: 3px;
 }
+
+/*////////////////////////////  Home  //////////////////////////// */
+
 .welcome {
-  background-image: url(../img/pexels-photo-998641.jpeg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 83vh;
 }
-.Titulo {
+h1{
   text-align: center;
-  padding: 30px 0px 30px 0px;
-  color: white;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+h3 {
+  font-size: 26px;
+  color: #ffffff;
+  padding-top: 15px;
+  text-align: center;
 }
 .carrusel {
-  height: 500px;
-  width: 100%;
-  padding: 0px 100px 0px 100px;
-  border-radius: 10%;
-  margin-bottom: 50px;
+  margin: auto;
+  border-radius: 10px;
+  height: 62vh;
+  width: 70%;
 }
+
+/*////////////////////////////  Products index //////////////////////////// */
+
 .products {
   text-align: center;
+  background-image: linear-gradient(
+    to left,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+  padding: 15px;
+  padding-bottom: 30px;
 }
 .recomendaciones {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-section {
+section{
   background-image: linear-gradient(
     to left,
     #000000,
@@ -84,23 +106,26 @@ section {
   );
 }
 .product {
-  margin: 10px;
-  border-radius: 15px;
+  border-radius: 5px;
   padding: 10px;
   border-style: solid;
-  background-color: rgb(180, 177, 177);
+  background-color: rgb(222, 220, 220);
 }
 .product img {
   height: 180px;
   width: 250px;
-  border-radius: 15px;
+}
+.product img:hover{
+  cursor: pointer;
 }
 .product p {
   margin: 6px;
   font-size: 18px;
 }
+
+/*//////////////////////////// Footer  ////////////////////////////*/
+
 footer {
-  padding: 10px;
   background-image: linear-gradient(
     to right,
     #000000,
@@ -111,88 +136,152 @@ footer {
   );
   text-align: center;
   font-size: 18px;
+}
+.footerFlex{
+  display: flex;
+  justify-content: space-between;
 }
 footer p {
   color: white;
+  margin: 0px;
+  padding: 5px;
+  padding-top: 10px;
 }
 footer img {
-  max-width: 120px;
-  min-height: 80px;
+  width: 120px;
+  height: 70px;
+  margin: 10px;
   border-radius: 80%;
-  margin-left: 50px;
 }
-svg {
-  height: 30px;
+footer svg{
+  padding: 0px;
+  margin: 10px;
   width: 30px;
-  margin: 4px;
+  height: 35px;
 }
-
-.form {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-.comunication {
-  color: white;
-  padding: 50px;
-  text-align: center;
-}
-.comunication h2,
-p {
-  color: white;
-}
-.comunication svg {
-  height: 100px;
-  width: 200px;
-}
-.formulario {
-  color: white;
-  padding: 50px;
-  border-style: solid;
-  border-radius: 15px;
-  margin-left: 50x;
-  font-size: 18px;
-}
-.formulario label {
-  color: white;
-}
-.formulario input,
-textarea {
-  border-radius: 15px;
-}
-.formOpciones {
-  padding-bottom: 10px;
-}
-.login {
-  padding: 10px;
-}
-.botonesUsuarios {
-  margin: 30px;
-  height: 60px;
-  width: 450px;
-  background-image: linear-gradient(
-    to right,
-    #000000,
-    #101111,
-    #252a2a,
-    #3c3f3f,
-    #585858
-  );
-  border-style: solid;
-  border-radius: 15px;
-  color: white;
-  font-size: 18px;
-}
-
-#usuarios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 50%;
+footer svg:hover{
+  transform: scale(1.2);
+  cursor: pointer;
 }
 footer a {
   text-decoration: none;
 }
+/*////////////////////////////  Contacto //////////////////////////// */
+
+.form {
+  text-align: start;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+.comunication {
+  color: white;
+  text-align: center;
+}
+.white{
+  color: white;
+}
+.comunication p {
+  color: white;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.comunication svg {
+  height: 60px;
+  width: 110px;
+  margin: 15px;
+}
+.form form{
+  width: 380px;
+  border-style: solid;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 18px;
+  margin: auto;
+}
+.form label, input, textarea{
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+/*//////////////////////////// Register- Login //////////////////////////// */
+.register{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  background-image: linear-gradient(
+    to left,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+  align-items: center;
+  justify-content: center;
+}
+.marginAuto{
+  margin: auto;
+}
+.register p{
+  color: white;
+  text-align: center;
+}
+.register h1{
+  color: white;
+}
+.register form{
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
+  width: 420px;
+  padding: 15px;
+  border-radius: 5px;
+}
+.register label{
+  color: white;
+  padding: 5px;
+  text-align: start;
+}
+.register div{
+  margin: 5px;
+}
+.age{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+.age input{
+  width: 20px;
+  height: 35px;
+}
+.buttonRegister{
+  text-align: center;
+}
+.conditions{
+  display: flex;
+  justify-content: center;
+}
+.conditions input[type="checkbox"]{
+  width: 20px;
+  height: 30px;
+  margin-left: 20px;
+}
+.register input[type="text"], input[type="email"], input[type="password"]{
+  padding: 5px;
+}
+
+
+/*//////////////////////////// Productos Porductos.html //////////////////////////// */
+
 .sectionProduct {
   width: 100%;
   display: flex;
@@ -205,7 +294,6 @@ footer a {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
 .recomendacion {
   display: block;
   border-style: solid;
@@ -222,7 +310,6 @@ footer a {
     #74cdf0
   );
 }
-
 .imagen-producto {
   width: 250px;
   height: 180px;
@@ -312,7 +399,6 @@ h2 {
   padding: 5px;
   border-radius: 5px;
 }
-
 #seccion-pago {
   display: flex;
   justify-content: space-between;
@@ -321,16 +407,10 @@ h2 {
   margin-left: 5px;
 }
 p{
-    color: black;
+  color: black;
 }
 .flex {
   display: flex;
-}
-.subTitulos {
-  font-size: 26px;
-  color: #350c81;
-  padding-top: 25px;
-  text-align: center;
 }
 .btn-borrar {
   border-radius: 5px;
@@ -374,26 +454,21 @@ p{
   line-height: 1.5;
   margin-bottom: 20px;
 }
-
 .payment-methods {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-
 .payment-methods li {
   margin-bottom: 10px;
 }
-
 .payment-methods label {
   display: inline-block;
   margin-left: 10px;
 }
-
 .payment-methods input[type="radio"] {
   display: none;
 }
-
 .payment-methods input[type="radio"] + label:before {
   content: "";
   display: inline-block;
@@ -405,12 +480,10 @@ p{
   margin-right: 10px;
   cursor: pointer;
 }
-
 .payment-methods input[type="radio"]:checked + label:before {
   background-color: #007bff;
   border-color: #007bff;
 }
-
 .payment-methods input[type="radio"]:checked + label:after {
   content: "";
   display: inline-block;
