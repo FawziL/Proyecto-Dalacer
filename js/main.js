@@ -137,198 +137,36 @@ fetch(stock)
     saldo.textContent = "Tu saldo total es de: " + saldoTotal + "$";
 
 
-
-
-
-
 comprar.addEventListener('click',()=>{
     if(productosFavoritos.length === 0){
         Swal.fire({
             showConfirmButton: false,
             icon: 'error',
-            title: 'Pago no realizado',
-            text: 'No hay productos en el carrito!',
-            html: `<button data-bs-target="#comprar-producto" data-bs-dismiss="modal" class="ola">Continuar</button>`,
+            title: 'No hay productos en el carrito',
+            text: '',
             footer: '<a href="">¿Tuviste algún problema?</a>',
             timer: 2500
           })
-    }
-    })
-
-
-
-
-
-
-
-
-    function funcionar(){
-        const pagar = document.getElementById('pagar');
-        pagar.textContent = "Pagar";
-        let datos = document.querySelector(".datos")
-        let inputContraseña = document.querySelector(".contrasena")
-        let inputUsuario = document.querySelector(".usuario")
-        let inputCorreo = document.querySelector(".correo")
-        pagar.addEventListener('click',()=>{
-    
-            user = inputUsuario.value;
-            contra = inputContraseña.value;
-            email = inputCorreo.value;
-            if (user == "" || contra == "" || email == ""){
-                datos.innerText = "*Debes completar los datos*"
-            } else if(productosFavoritos.length === 0){
+        }else if(productosFavoritos.reduce((acc,el)=> acc + (el.precio * el.cantidad), 0) > saldoTotal){
+            Swal.fire({
+                icon: 'error',
+                title: 'Pago no realizado',
+                text: 'No tenes suficiente plata!',
+                footer: '<a href="">¿Tuviste algún problema?</a>'
+                
+              })
+              
+        }else if(saldoTotal > parseInt(productosFavoritos.reduce((acc,el)=> acc + (el.precio * el.cantidad), 0))){
                 Swal.fire({
-                    icon: 'error',
-                    title: 'Pago no realizado',
-                    text: 'No hay productos en el carrito!',
+                    icon: 'success',
+                    title: 'Pago recibido',
+                    text: 'Gracias por comprar con nosotros!',
                     footer: '<a href="">¿Tuviste algún problema?</a>'
                   })
-            }else if(productosFavoritos.reduce((acc,el)=> acc + (el.precio * el.cantidad), 0) > saldoTotal){
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Pago no realizado',
-                    text: 'No tenes suficiente plata!',
-                    footer: '<a href="">¿Tuviste algún problema?</a>'
-                    
-                  })
-                  
-            }else if(saldoTotal > parseInt(productosFavoritos.reduce((acc,el)=> acc + (el.precio * el.cantidad), 0))){
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'Pago recibido',
-                        text: 'Gracias por comprar con nosotros!',
-                        footer: '<a href="">¿Tuviste algún problema?</a>'
-                      })
-                      saldo.textContent = "Tu saldo total es de: " + (saldoTotal - parseInt(productosFavoritos.reduce((acc,el)=> acc + (el.precio * el.cantidad), 0))) + "$"
-                    saldoTotal = (saldoTotal - parseInt(productosFavoritos.reduce((acc,el)=> acc + (el.precio * el.cantidad), 0)))
-                     
-                }
-            
-        })
-    
-         
-    }
-
-
-
-    paypal.addEventListener('click',()=>{
-        botones.textContent = "Pagar con paypal"
-        botones.addEventListener('click',()=>{
-            Swal.fire({
-                showConfirmButton: false,
-                html: ` <h2>Datos de pago</h2>
-                        <hr>
-                        <div class="flex margin"> <p>Correo</p><input type="email" name="nombre" placeholder="tucorreo@email.com" class="correo"></div>
-                        <div class="flex margin"> <p>Contraseña</p><input type="password" class="contrasena" placeholder="password"></div>
-                        <label class="padding"><input type="checkbox" class="usuario"> ¿Deseas recibir una factura mediante tu correo?</label>
-                        <p class="datos"></p>
-                        <button id="pagar"></button>
-                        `,
-                    
-              })
-              funcionar()
-        })
-    
+                  saldo.textContent = "Tu saldo total es de: " + (saldoTotal - parseInt(productosFavoritos.reduce((acc,el)=> acc + (el.precio * el.cantidad), 0))) + "$"
+                saldoTotal = (saldoTotal - parseInt(productosFavoritos.reduce((acc,el)=> acc + (el.precio * el.cantidad), 0)))   
+        }
     })
-
-    debito.addEventListener('click',()=>{
-        botones.textContent = "Pagar con debito";
-        botones.addEventListener('click',()=>{
-            Swal.fire({
-                showConfirmButton: false,
-                html: ` <h2>Datos de la tarjeta</h2>
-                        <hr>
-                        <div class="flex margin"> <p>Documento de identidad</p><input type="text" name="nombre" placeholder="P-xxx-xxx-xxx" class="usuario"></div>
-                        <div class="flex margin"> 
-                        <p>Mes de vencimiento</p>
-                        <select name="Mes de vencimiento">
-                        <option>Enero</option>
-                        <option>Febrero</option>
-                        <option>Marzo</option>
-                        <option>Abril</option>
-                        <option>Mayo</option>
-                        <option>Junio</option>
-                        <option>Julio</option>
-                        <option>Agosto</option>
-                        <option>Septiembre</option>
-                        <option>Octubre</option>
-                        <option>Noviembre</option>
-                        <option>Diciembre</option>
-                        </select>
-                        </div>
-
-                        <div class="flex margin">
-                        <p>Año de vencimiento</p>
-                        <select name="Año de vencimiento">
-                        <option>2022</option>
-                        <option>2023</option>
-                        <option>2024</option>
-                        <option>2025</option>
-                        <option>2026</option>
-                        <option>2027</option>
-                        </select>
-                        </div>
-
-                        <div class="flex margin"> <p>N° de tarjeta de débito</p><input type="text" class="correo" placeholder=" XXXX-XXXX-XXXX-XXXX"></div>
-                        <div class="flex margin"> <p>Código de seguridad </p><input type="password" placeholder="xxxx" class="contrasena"></div>
-                        <p class="datos"></p>
-                        <button id="pagar"></button>
-                        `,
-              })
-              funcionar()
-        })
-    })
-
-    credito.addEventListener('click',()=>{
-        botones.textContent = "Pagar con crédito";
-        botones.addEventListener('click',()=>{
-            Swal.fire({
-                showConfirmButton: false,
-                html: ` <h2>Datos de la tarjeta</h2>
-                        <hr>
-                        <div class="flex margin"> <p>Credit card number </p><input type="text" name="nombre" placeholder=" XXXX-XXXX-XXXX-XXXX" class="usuario"></div>
-                        <div class="flex margin"> 
-                        <p>Mes de vencimiento</p>
-                        <select name="Mes de vencimiento">
-                        <option>Enero</option>
-                        <option>Febrero</option>
-                        <option>Marzo</option>
-                        <option>Abril</option>
-                        <option>Mayo</option>
-                        <option>Junio</option>
-                        <option>Julio</option>
-                        <option>Agosto</option>
-                        <option>Septiembre</option>
-                        <option>Octubre</option>
-                        <option>Noviembre</option>
-                        <option>Diciembre</option>
-                        </select>
-                        </div>
-
-                        <div class="flex margin">
-                        <p>Año de vencimiento</p>
-                        <select name="Año de vencimiento">
-                        <option>2022</option>
-                        <option>2023</option>
-                        <option>2024</option>
-                        <option>2025</option>
-                        <option>2026</option>
-                        <option>2027</option>
-                        </select>
-                        </div>
-
-                        <div class="flex margin"> <p>Cardholder Name </p><input type="text" class="correo"></div>
-                        <div class="flex margin"> <p>CVV/CVV2 Code </p><input type="password"  placeholder="xxxx" class="contrasena"></div>
-                        <p class="datos"></p>
-                        <button id="pagar"></button>
-                        `,
-              })
-              funcionar()
-            })
-
-    })
-
-
-    })
+})
 
    

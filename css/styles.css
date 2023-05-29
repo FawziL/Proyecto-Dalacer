@@ -107,9 +107,10 @@ section{
 }
 .product {
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
+  padding-bottom: 0px;
   border-style: solid;
-  background-color: rgb(222, 220, 220);
+  background-color: white;
 }
 .product img {
   height: 180px;
@@ -119,7 +120,7 @@ section{
   cursor: pointer;
 }
 .product p {
-  margin: 6px;
+  margin-bottom: 0px;
   font-size: 18px;
 }
 
@@ -193,12 +194,19 @@ footer a {
 }
 .form form{
   width: 380px;
-  border-style: solid;
   color: white;
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 5px;
   font-size: 18px;
   margin: auto;
+  background-image: linear-gradient(
+    to right,
+    #000000,
+    #101111,
+    #252a2a,
+    #3c3f3f,
+    #585858
+  );
 }
 .form label, input, textarea{
   width: 100%;
@@ -280,11 +288,16 @@ footer a {
 }
 
 
-/*//////////////////////////// Productos Porductos.html //////////////////////////// */
+/*//////////////////////////// Productos Porductos.html ///////////////////////////// */
 
 .sectionProduct {
   width: 100%;
   display: flex;
+}
+.sectionProduct svg{
+  width: 25px;
+  height: 25px;
+  color: white;
 }
 .sectionProductProduct {
   width: 100%;
@@ -297,11 +310,10 @@ footer a {
 .recomendacion {
   display: block;
   border-style: solid;
-  border-radius: 10%;
+  border-radius: 5px;
   text-align: center;
   margin: 10px;
   padding: 10px;
-  width: 300px;
   background-image: linear-gradient(
     to right,
     #044369,
@@ -313,16 +325,21 @@ footer a {
 .imagen-producto {
   width: 250px;
   height: 180px;
-  border-radius: 15px;
-  padding: 5px;
+  border-radius: 5px;
 }
-
 .btn-favorito {
   height: 30px;
   width: 150px;
   border-radius: 10px;
   background-color: aliceblue;
   border: none;
+}
+.btn-favorito:hover{
+  background-color: rgb(121, 127, 132);
+}
+.btn-favorito:active{
+  position: relative;
+  top: 3px;
 }
 .categorias {
   font-size: 22px;
@@ -379,13 +396,20 @@ h2 {
 .titleP {
   margin: 0 auto;
 }
+.titulo-producto{
+  font-size: 22px;
+  padding: 0px;
+  padding-top: 8px;
+}
 #boton-carrito {
   width: 50px;
   height: 40px;
-  border-radius: 25%;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  border-radius: 25px;
+  border-style: none;
+  background-color: aliceblue;
+}
+#boton-carrito:hover{
+  background-color: rgb(121, 127, 132);
 }
 .listado-favoritos {
   display: flex;
@@ -393,7 +417,7 @@ h2 {
   text-align: center;
   flex-wrap: wrap;
 }
-#pagar, #comprar{
+#comprar{
   background-color: rgb(0, 255, 85);
   float: right;
   padding: 5px;
@@ -406,8 +430,14 @@ h2 {
   margin-right: 5px;
   margin-left: 5px;
 }
+.modal-content{
+  text-align: center;
+}
 p{
   color: black;
+}
+.subTitulos{
+  padding-top: 10px;
 }
 .flex {
   display: flex;
@@ -444,52 +474,4 @@ p{
   height: 480px;
   width: 500px;
   padding: 15px;
-}
-
-
-
-.form-group {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-.payment-methods {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-.payment-methods li {
-  margin-bottom: 10px;
-}
-.payment-methods label {
-  display: inline-block;
-  margin-left: 10px;
-}
-.payment-methods input[type="radio"] {
-  display: none;
-}
-.payment-methods input[type="radio"] + label:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  margin-right: 10px;
-  cursor: pointer;
-}
-.payment-methods input[type="radio"]:checked + label:before {
-  background-color: #007bff;
-  border-color: #007bff;
-}
-.payment-methods input[type="radio"]:checked + label:after {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ffffff;
 }
