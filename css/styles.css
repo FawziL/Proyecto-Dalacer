@@ -275,7 +275,6 @@ footer a {
     #3c3f3f,
     #585858
   );
-  width: 420px;
   padding: 15px;
   border-radius: 5px;
 }
@@ -527,9 +526,6 @@ p{
   .welcome {
     height: 85vh;
   }
-  h1{
-    color: #0d6efd;
-  }
   .carrusel {
     width: 90%;
     height: 65vh;
@@ -556,10 +552,10 @@ p{
   .titleProduct {
     padding: 5px;
   }
-  .form {
-    text-align: start;
-    height: 100%;
-    padding-bottom: 20px;
-    margin: auto;
+  .form form{
+    width: 340px;
+  }
+  .register form {
+    width: 340px;
   }
 }   
