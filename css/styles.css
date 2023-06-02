@@ -523,13 +523,36 @@ p{
   padding: 15px;
 }
 
-@media (max-width: 480px) {
-
+@media (max-width: 970px) {
+  .welcome {
+    height: 85vh;
+  }
+  .carrusel {
+    width: 90%;
+  }
+  .product {
+    margin: 10px;
+  }
+  .footerFlex div{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .sectionProduct {
+    display: block;
+  }
+  .x svg{
+    transform: rotate(90deg);
+  }
+  .categorias {
+    width: 100%;
+  }
+  .titleProduct {
+    padding: 5px;
+  }
+  .form {
+    text-align: start;
+    height: 100%;
+    padding-bottom: 20px;
+    margin: auto;
+  }
 }   
-
-@media (min-width: 481px) and (max-width: 768px) {
-
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-
-}
