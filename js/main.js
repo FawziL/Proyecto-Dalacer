@@ -21,7 +21,7 @@ fetch(stock)
 
     productos.forEach(producto =>{
 
-         const casilla = document.createElement('section');
+         const casilla = document.createElement('div');
          casilla.classList.add('recomendacion');
 
          const imagenProducto = document.createElement('img');
@@ -56,8 +56,6 @@ fetch(stock)
          contenedorProductos.appendChild(casilla)
 
 });
-
-
     function agregarAFavorito(id) { 
 
         let repetido = productosFavoritos.find(buscar => buscar.id == id)

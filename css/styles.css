@@ -27,7 +27,8 @@ nav {
   margin-right: 50px;
 }
 .navbar-nav a{
-  margin-right: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .nax {
   background-color: transparent;
@@ -43,9 +44,18 @@ nav {
 .padding-left {
   padding-left: 10px;
 }
-select {
-  border-radius: 5px;
-  padding: 3px;
+nav select {
+  border-radius: 4px;
+  padding: 5px;
+  text-align: center;
+}
+.selectForm{
+  text-align: center;
+  margin: 10px;
+}
+.navbar-nav a{
+  text-align: center;
+  margin-top: 5px;
 }
 
 /*////////////////////////////  Home  //////////////////////////// */
@@ -72,7 +82,7 @@ h3 {
   margin: auto;
   border-radius: 10px;
   height: 62vh;
-  width: 70%;
+  width: 60%;
 }
 
 /*////////////////////////////  Products index //////////////////////////// */
@@ -108,9 +118,11 @@ section{
 .product {
   border-radius: 5px;
   padding: 5px;
-  padding-bottom: 0px;
   border-style: solid;
   background-color: white;
+}
+.product a{
+  text-decoration: none;
 }
 .product img {
   height: 180px;
@@ -140,7 +152,11 @@ footer {
 }
 .footerFlex{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+.footerFlex div{
+  margin-left: 25px;
+  margin-right: 25px;
 }
 footer p {
   color: white;
@@ -159,8 +175,9 @@ footer svg{
   margin: 10px;
   width: 30px;
   height: 35px;
+  fill: #0d6efd;
 }
-footer svg:hover{
+svg:hover{
   transform: scale(1.2);
   cursor: pointer;
 }
@@ -194,7 +211,6 @@ footer a {
 }
 .form form{
   width: 380px;
-  color: white;
   padding: 20px;
   border-radius: 5px;
   font-size: 18px;
@@ -210,9 +226,19 @@ footer a {
 }
 .form label, input, textarea{
   width: 100%;
-  color: white;
   border-radius: 5px;
   padding: 5px;
+}
+.form label{
+  color: white
+}
+.form .btn-success{
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.form .btn-success:hover{
+  background-color:#083984;
+  border-color: #083984;
 }
 /*//////////////////////////// Register- Login //////////////////////////// */
 .register{
@@ -286,6 +312,14 @@ footer a {
 .register input[type="text"], input[type="email"], input[type="password"]{
   padding: 5px;
 }
+.register .btn-success{
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+.register .btn-success:hover{
+  background-color:#083984;
+  border-color: #083984;
+}
 
 
 /*//////////////////////////// Productos Porductos.html ///////////////////////////// */
@@ -295,7 +329,7 @@ footer a {
   display: flex;
 }
 .sectionProduct svg{
-  width: 25px;
+  width: 20px;
   height: 25px;
   color: white;
 }
@@ -313,14 +347,8 @@ footer a {
   border-radius: 5px;
   text-align: center;
   margin: 10px;
-  padding: 10px;
-  background-image: linear-gradient(
-    to right,
-    #044369,
-    #217b9e,
-    #27ada9,
-    #74cdf0
-  );
+  padding: 5px;
+  background-color: #ffffffdd;
 }
 .imagen-producto {
   width: 250px;
@@ -331,11 +359,12 @@ footer a {
   height: 30px;
   width: 150px;
   border-radius: 10px;
-  background-color: aliceblue;
+  color: white;
+  background-color: #0d6efd;
   border: none;
 }
 .btn-favorito:hover{
-  background-color: rgb(121, 127, 132);
+  background-color: #083984;
 }
 .btn-favorito:active{
   position: relative;
@@ -400,16 +429,17 @@ h2 {
   font-size: 22px;
   padding: 0px;
   padding-top: 8px;
+  color: #000000;
 }
 #boton-carrito {
-  width: 50px;
+  min-width: 40px;
   height: 40px;
   border-radius: 25px;
   border-style: none;
-  background-color: aliceblue;
+  background-color: #0d6efd;
 }
 #boton-carrito:hover{
-  background-color: rgb(121, 127, 132);
+  background-color: #083984;
 }
 .listado-favoritos {
   display: flex;
@@ -417,11 +447,28 @@ h2 {
   text-align: center;
   flex-wrap: wrap;
 }
+.Pfavoritos{
+  background-color: #0d6efd;
+}
+.Pfavoritos p{
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.modal-content hr{
+  margin-top: 0px;
+}
 #comprar{
-  background-color: rgb(0, 255, 85);
+  background-color: #0d6efd;
   float: right;
   padding: 5px;
   border-radius: 5px;
+  color: white;
+  border: none;
+}
+#comprar:hover{
+  background-color: #083984;
 }
 #seccion-pago {
   display: flex;
@@ -474,4 +521,15 @@ p{
   height: 480px;
   width: 500px;
   padding: 15px;
+}
+
+@media (max-width: 480px) {
+
+}   
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+
 }
