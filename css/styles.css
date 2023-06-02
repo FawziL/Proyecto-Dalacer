@@ -523,15 +523,19 @@ p{
   padding: 15px;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 480px) {
   .welcome {
     height: 85vh;
   }
   .carrusel {
     width: 90%;
+    height: 65vh;
   }
   .product {
     margin: 10px;
+  }
+  #producto-comprar .modal-content{
+    width: 96%;
   }
   .footerFlex div{
     margin-left: 10px;
