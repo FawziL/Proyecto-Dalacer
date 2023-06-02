@@ -527,6 +527,9 @@ p{
   .welcome {
     height: 85vh;
   }
+  h1{
+    color: #0d6efd;
+  }
   .carrusel {
     width: 90%;
     height: 65vh;
